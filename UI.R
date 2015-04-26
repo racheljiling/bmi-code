@@ -4,9 +4,9 @@ shinyUI(
     # Application title
     headerPanel("BMI Calculator"),
     sidebarPanel(
-      h5('Enter your weight and height in kg/cm'),
-      numericInput('weight', 'Weight kg',50, min = 50, max = 200, step = 5),
-      numericInput('height', 'Height cm',100, min = 20, max = 300, step = 5),
+      h5('Enter your weight and height in lb/ft'),
+      numericInput('weight', 'Weight lb',50, min = 50, max = 200, step = 5),
+      numericInput('height', 'Height ft',100, min = 20, max = 300, step = 5),
       submitButton('Submit')
     ),
     mainPanel(
